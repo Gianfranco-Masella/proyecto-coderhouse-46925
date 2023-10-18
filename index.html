@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rosarivo:ital@0;1&display=swap" rel="stylesheet">
+
+    
+    <title>Weblink's Website of Wonders</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md nav-header">
+            <div class="container">
+
+              <a class="navbar-brand" href="./index.html"> <img src="../img/logo.png" class="logo" alt="Logo: Weblink's Website of Wonders"> </a>
+
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="./pages/blog.html">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/como-jugar.html">Como jugar D&D</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="./contenido.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Contenido
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="./pages/contenido/contenido-aventuras.html">Aventuras</a></li>
+                      <li><a class="dropdown-item" href="./pages/contenido/contenido-conjuros.html">Conjuros</a></li>
+                      <li><a class="dropdown-item" href="./pages/contenido/contenido-criaturas.html">Criaturas</a></li>
+                      <li><a class="dropdown-item" href="./pages/contenido/contenido-objetos.html">Objetos</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/preguntas-frecuentes.html">Preguntas Frecuentes</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <main>
+        <section>
+            <article>
+                <h1 class="welcome-message">Welcome weary wanderer to Weblink's Website of Wonders!</h1>
+    
+                <p class="title-secondary">Bienvenido a W.W.W! Weblink's Website of Wonders! Tras milenios de viajes y aprendizaje Weblink decidio asentarse en su biblioteca para traer todas las maravillas que experimento en sus aventuras para que tus campañas tengas la misma emocion y locura que el dia a dia del buen Weblink!</p>
+            </article>
+        </section>
+
+        <!-- Mi idea era crear un espacio "vacio" o una "ventana" que permitiera ver una imagen en parallax que tengo de fondo. Pero por alguna razon queda siempre en blanco -->
+        <div class="img-background"></div> 
+
+        <section>
+            <article>
+                <div id="carouselExampleIndicators" class="carousel slide carousel-banner ">
+                    <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./img/banner-placeholder.jpg" class="d-block w-100" alt="Imagen Placeholder de Carrusel 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/banner-placeholder.jpg" class="d-block w-100" alt="Imagen Placeholder de Carrusel 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/banner-placeholder.jpg" class="d-block w-100" alt="Imagen Placeholder de Carrusel 3">
+                    </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </article>
+        </section>
+
+        <!-- "Ventana"/Espacio vacio -->
+        <div class="img-background"></div>           
+
+        <section class="patreon-section">
+            </div>
+                <h2 class="title-secondary">Buscas acceso a contenido unico? Acceso anticipado a items poderosos? Creaciones personalizadas? Todo eso y mas para nuestros patreons</h2>
+            </div>
+            <!-- Con esta parte tuve problemas. Mi idea era tener el titulo y descripcion ocupando un bloque horizontal arriba y despues 3 cuadros con lo tiers del patreon uno al lado del otro pero no logre llegar a esa estructura con Flexbox -->
+            <article class="patreon-tier">
+                <h2>Nivel 1</h2>
+
+                <ul>
+                    <li><h3>Beneficio 1:</h3>
+                        <p>Acceso a todo el contenido de Tier I en nuestro Patreon!</p>
+                    </li>
+                    <li><h3>Beneficio 2:</h3>
+                        <p>Acceso al rol de "Acolito" en nuestro Discord!</p>
+                    </li>
+                    <li><h3>Beneficio 3:</h3>
+                        <p>Acceso anticipado a contenido del sitio!</p>
+                    </li>
+                </ul>
+
+                <a href="https://www.patreon.com/home" target="_blank">Unirse a Tier I</a>
+            </article>
+
+            <article class="patreon-tier">
+                <h2>Nivel 2</h2>
+
+                <ul>
+                    <li>
+                        <h3>Beneficio 1:</h3>
+                        <p>Acceso a todo el contenido de Tier I y Tier II en nuestro Patreon!</p>
+                    </li>
+                    <li>
+                        <h3>Beneficio 2:</h3>
+                        <p>Acceso al rol de "Maestro" en nuestro Discord junto con acceso al chat privado de los Maestros!</p>
+                    </li>
+                    <li>
+                        <h3>Beneficio 3:</h3>
+                        <p>Acceso anticipado a contenido del sitio Y del Patreon!</p>
+                    </li>
+                </ul>
+
+                <a href="https://www.patreon.com/home" target="_blank">Unirse a Tier II</a>               
+            </article>
+
+            <article class="patreon-tier">
+                <h2>Nivel 3</h2>
+
+                <ul>
+                    <li>
+                        <h3>Beneficio 1:</h3>
+                        <p>Acceso a TODO el contenido de en nuestro Patreon!</p>
+                    </li>
+                    <li>
+                        <h3>Beneficio 2:</h3>
+                        <p>Acceso al rol de "Deidad" en nuestro Discord junto con acceso al chat privado de las Deidades!</p>
+                    </li>
+                    <li>
+                        <h3>Beneficio 3:</h3>
+                        <p>Acceso anticipado a contenido general Y EXCLUSIVO del sitio Y del Patreon!</p>
+                    </li>
+                </ul>
+
+                <a href="https://www.patreon.com/home" target="_blank">Unirse a Tier II</a> 
+            </article>
+
+        </section>
+
+        <!-- "Ventana"/Espacio vacio -->
+        <div class="img-background"></div>  
+
+        <section>
+            </div>
+                <h2 class="title-secondary">CLIENTES SATISFECHOS</h2>
+            </div>
+            <!-- Tenia la idea de que los comentarios de clientes se dividieran e intercalaran, estando uno en el lado izquierdo y otro en el lado derecho -->
+            <article class="client-message">
+                <h3>Storm Honore</h3>
+                <p>Quedé mas que satisfecho hacia la compra de productos para mi mesa de Alquimia. (Lamentablemente me emocioné y en una mala mezcla mi piel quedó azul)</p>
+            </article>
+
+            <article class="client-message">
+                <h3>Kanu Subarriata</h3>
+                <p>Quien diria que la diferencia entre 100 acres y 58.656 acres  y un incendio forestal es una rebaja del 50% en pergaminos de bola de fuego?</p>
+            </article>
+
+            <article class="client-message">
+                <h3>Kaet</h3>
+                <p>Información confiable sobre las misiones y recompensas valiosas — 34 lenguas y 47 dientes para mi colección (también se aprecian las monedas de oro complementarias).</p>
+            </article>
+
+            <article class="client-message">
+                <h3>Nombre Apellido</h3>
+                <p>Comentario Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda cum recusandae, ipsum tempora eos aperiam ipsam et</p>
+            </article>
+
+            <article class="client-message">
+                <h3>Nombre Apellido</h3>
+                <p>Comentario Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda cum recusandae, ipsum tempora eos aperiam ipsam et</p>
+            </article>
+        </section>
+
+        <!-- "Ventana"/Espacio vacio -->
+        <div class="img-background"></div>  
+
+    </main>
+
+    <footer>
+        <div class="footer-nav left">
+            ENCONTRANOS EN:
+            <ul>
+                <li><a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i> Facebook</a></li>
+                <li><a href="https://twitter.com/" target="_blank"><i class="bi bi-twitter"></i> Twitter</a></li>
+                <li><a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i> Instagram</a></li>
+                <li><a href="https://www.tiktok.com/" target="_blank"><i class="bi bi-tiktok"></i> TikTok</a></li>
+                <li><a href="https://www.patreon.com/home" target="_blank"><i class="bi bi-heart"></i> Patreon</a></li>
+                <li><i class="bi bi-envelope"></i> mailfalso@gmail.com</li>
+            </ul>
+        </div>
+    
+        <div class="footer-nav right">
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./pages/contenido.html">Contenido</a></li>
+                <li><a href="./pages/preguntas-frecuentes.html">Preguntas frecuentes</a></li>
+                <li><a href="./pages/como-jugar.html">Como jugar D&D</a></li>
+                <li><a href="./pages/blog.html">Blog</a></li>
+                <li><a href="./pages/contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

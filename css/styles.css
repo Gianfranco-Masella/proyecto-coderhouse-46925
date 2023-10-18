@@ -1,0 +1,405 @@
+/* ---- CSS Reset ----- */
+* {
+	margin: 0;
+	padding: 0;
+  box-sizing: border-box;
+  font-family: Rosarivo;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  text-decoration-color: none;
+}
+/* ---- CSS Reset ----- */
+
+
+/* ---- HEADER ----- */
+
+/* ---- Fondo de color para Header. Tuve que recurrir a buscar ayuda y Chat GPT para esto y termine necesitando usar  ambas etiquetas
+para que se mantenga el color ya que algunas opciones de Bootstrap no estaban siendo "pisadas" por mi Styles de otra forma
+Otro problema raro es que en el index el texto del nav esta como un poco mas grande o en negrita y en las demas paginas no pero no puedo
+encontrar nada que este causandolo----- */
+.nav-header {
+  background-color: #912633;
+}
+.nav-header .navbar-nav .nav-item.dropdown .dropdown-menu {
+  background-color: #912633;
+}
+
+/* ---- Aca me paso lo mismo que con el fondo. Si no usaba clases tan especificas el estilo de Boostrap cobraba importancia sobre el mio ----- */
+.nav-header .navbar-nav .nav-link,
+.nav-header .navbar-nav .nav-item.dropdown .dropdown-menu .dropdown-item {
+  color: #fff;
+}
+
+.logo{
+  width: 7.5rem;
+}
+/* ---- HEADER ----- */
+
+
+/* ---- Header - Medium ----- */
+@media (min-width: 768px) {
+  .nav-header {
+      padding: 10px 50px;
+  }
+
+  .logo {
+      width: 10rem;
+  }
+
+  .navbar-nav {
+      margin-left: auto;
+  }
+}
+/* ---- Header - Medium ----- */
+
+
+/* ---- BODY ----- */
+
+/* ---- Imagenes en Body e Imagen Parallax ----- */
+.body-img{
+max-width: 50vw;
+min-width: 30vh;
+padding: 20px auto;
+}
+
+.img-background {
+	background-image: url(../img/fondo.jpg);
+
+	height: 300px;
+
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;  
+}
+/* ---- Imagenes en Body e Imagen Parallax ----- */
+
+
+/* ---- FORMATO PARA TEXTOS ----- */
+/* ---- Mensaje de Bienvenida en index ----- */
+.welcome-message{
+  background-color: white;
+  padding: 20px;
+
+
+  text-align: center;
+  color: black;
+  font-size: 2rem;
+  font-weight: bold italic;
+}
+
+/* ---- Titulos secundarios en toda la pagina ----- */
+.title-secondary{
+  background-color: white;
+  padding: 20px;
+  
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+/* ---- Titulos terciarios en toda la pagina ----- */
+.title-tertiary{
+  padding: 10px;
+  
+  font-size: 1.5rem;
+}
+
+/* ---- Texto generico en toda la pagina ----- */
+.generic-text{
+  padding: 10px;
+}
+
+/* ---- Titulos y texto - Medium ----- */
+@media (min-width: 768px) {
+  .welcome-message, .title-secondary {
+      text-align: left;
+  }
+}
+/* ---- FORMATO PARA TEXTOS ----- */
+
+
+/* ---- Carrusel en index ----- */
+/* ---- Tuve problemas con el carrusel. Cuando la resolucion llega a tamaños mas grandes, como desktop, no puedo cambiar la altura del contenedor
+ni las imagenes del carrusel. Como resultado el carrusel ocupa todo el alto de la pantalla en el sector en el que esta ubicado ----- */
+.carousel-banner{
+  padding: 10px 0px;
+}
+/* ---- Carrusel en index ----- */
+
+
+/* ---- PATREON ----- */
+.patreon-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.patreon-tier {
+  border: 3px solid #000;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #c9c9c9;
+  margin: 10px auto;
+  max-width: 490px;
+
+}
+
+.patreon-tier h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  padding-bottom: 15px;
+}
+
+.patreon-tier a {
+  display: block;
+  background-color: #912633;
+  color: #fff;
+  
+  width: max-content;
+  margin: 0 auto;
+  padding: 10px 20px;
+
+  border: 2px solid #410202;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+
+}
+
+.patreon-tier ul {
+  text-align: left;
+  padding-left: 20px;
+}
+/* ---- PATREON ----- */
+
+
+
+/* ---- PATREON - MEDIUM ----- */
+@media (min-width: 768px) {
+  .patreon-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin: 10px;
+  }
+
+  .patreon-section h2 {
+    grid-row: 1;
+    grid-column: 1 / span 3;
+  }
+
+  .patreon-tier {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    grid-row: 2;
+    grid-column: auto;
+  }
+}
+/* ---- PATREON - MEDIUM ----- */
+
+
+/* ---- BLOG ----- */
+.blog-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-article {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #fff;
+  text-align: left;
+  padding-bottom: 10px;
+  overflow: hidden;
+  
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.blog-article img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: fill;
+
+}
+
+.blog-article h2 {
+  font-size: 20px;
+  margin: 10px;
+}
+
+.blog-article p {
+  font-size: 16px;
+  margin: 10px;
+}
+
+.blog-article a {
+  display: block;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 10px;
+}
+/* ---- BLOG ----- */
+
+
+/* ---- BLOG - MEDIUM ----- */
+@media (min-width: 768px) {
+  .blog-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin: 10px;
+  }
+
+  .blog-article {
+    grid-row: 2;
+    grid-column: auto;
+    max-width: 400px;
+  }
+
+  .blog-section h1 {
+    grid-row: 1;
+    grid-column: 1 / span 3;
+  }
+
+  .blog-article img {
+    height: 50%;
+    display: block;
+    object-fit: cover;
+    margin: 0 auto;
+  }
+}
+/* ---- BLOG - MEDIUM ----- */
+
+
+/* ---- MENSAJES DE CLIENTES - INDEX ----- */
+
+.client-message {
+  padding: 10px;
+  border: 1px solid #000000;
+  background-color: #dddddd;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.client-message h3 {
+  font-size: 1.5em;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #575757;
+  padding: 10px;
+}
+
+.client-message p {
+  padding: 10px;
+}
+/* ---- MENSAJES DE CLIENTES - INDEX ----- */
+
+
+/* ---- MENSAJES DE CLIENTES - MEDIUM - INDEX ----- */
+@media (min-width: 768px) {
+
+  /* ---- Estos bloques hacen que los comentarios de los clientes queden "alternados" uno de cada lado ----- */
+  .client-message:nth-child(even) {
+    flex-direction: row;
+    width: 75%;
+    margin-right: 20px;
+  }
+
+  .client-message:nth-child(odd) {
+    flex-direction: row;
+    width: 75%;
+    margin-left: auto;
+    text-align: right;
+  }
+}
+/* ---- MENSAJES DE CLIENTES - MEDIUM - INDEX ----- */
+
+
+/* ---- FOOTER ----- */
+/* ---- Tuve problemas con el formato y estilo del footer. No se si era por Bootstrap o algun error mio, pero tuve que buscar ayuda y
+usar ChatGPT para encontrar una solucion. Si no uso el nivel de especificidad que use aca algunas partes del estilo como margin entre <li>
+no se aplica o los iconos de Bootstrap desaparecen ----- */
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.75rem;
+}
+
+.footer-nav {
+  width: 50%;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.right {
+  text-align: right;
+  padding-right: 10px;
+}
+
+.footer-nav ul:first-child {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-nav ul:last-child {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-nav ul:last-child li {
+  margin-bottom: 10px;
+}
+
+.footer-nav ul a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footernav ul a .bi {
+  color: #fff;
+  font-size: 0.75rem;
+}
+/* ---- FOOTER ----- */
+
+
+/* ---- FOOTER - MEDIUM----- */
+@media (min-width: 768px) {
+
+  footer {
+    font-size: 1rem;
+  }
+  
+  .right {
+    text-align: left;
+    border-left: 2px solid white;
+  }
+  
+  .footernav ul a .bi {
+    font-size: 1rem;
+  }
+
+}
+/* ---- FOOTER - MEDIUM----- */
+
+
+/* ---- MAPAS Y VIDEOS ----- */
+.article-map{
+  width: 100%;
+  height: 50vh;
+  padding: 10px auto;
+}
+/* ---- MAPAS Y VIDEOS ----- */
