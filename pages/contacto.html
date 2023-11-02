@@ -4,8 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../css/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rosarivo:ital@0;1&display=swap" rel="stylesheet">
+
     <title>Contacto</title>
 </head>
 
@@ -55,49 +62,48 @@
 
       <div class="img-background"></div>
 
-        <section class="generic-text">
-            <article>
-                <h2>Donde encontrarnos?</h2>
+      <h1>Contacto</h1>
 
-                <iframe class="article-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12162.766312770595!2d-71.0082967088794!3d24.999706184034075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89451ab5034cb7ab%3A0xb600ecf3df7aca4d!2sTri%C3%A1ngulo%20de%20las%20Bermudas!5e0!3m2!1ses-419!2sar!4v1695501848830!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> frameborder="0"></iframe>
+      <!-- Donde Encontrarnos? -->
+      <section>
+          <h2>¿Dónde Encontrarnos?</h2>
 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus adipisci consequuntur voluptas. Laborum expedita, ea sint modi ex voluptatem doloremque!</p>
-            </article>
+          <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1016836.1920419649!2d-66.29285696210592!3d25.517977181755988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1586176433677!5m2!1sen!2sus"></iframe>
 
-            <article>
-                <h2>Quienes somos?</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, eaque exercitationem. Error aliquid ipsum eius. Hic autem delectus aperiam fugiat!</p>
-            </article>
-
-            <article>
-                <h2>Envianos un mail!</h2>
-
-                <form action=""></form>
-                <div>
-                    <label for="contacto-nombre">Nombre
-                        <input type="text" placeholder="Nombre" name="contacto-nombre">
-                    </label>
-                </div>
-
-                <div>
-                    <label for="contacto-mail">Mail
-                        <input type="email" placeholder="Mail" name="contacto-mail">
-                    </label>
-                </div>
-
-                <div>
-                    <label for="contacto-texto">Pregunta
-                        <input type="textarea" placeholder="Mensaje" name="contacto-texto">
-                    </label>
-                </div>
-
-                <div>
-                    <input type="submit" value="ENVIAR">
-                </div>
-
-            </article>
-
-        </section>
+          <p>¡Nos encontramos en un lugar muy especial, el Triángulo de las Bermudas! Seguí estas instrucciones para llegar:</p>
+          <ol>
+            <li>Abordá un barco con forma de dragón en tu puerto más cercano (esos botes que son patitos también sirven).</li>
+            <li>Navegá hacia el este, cantando canciones de piratas durante seis días y tres noches seguidas.</li>
+            <li>Justo cuando las estrellas formen una constelación de un d20, llegarás a nuestro escondite secreto; toma el ascensor mágico.</li>
+            <li>¡Bienvenido a Weblink's Website of Wonders!</li>
+          </ol>
+      </section>
+  
+      <!-- Quiénes Somos? -->
+      <section>
+          <h2>¿Quiénes Somos?</h2>
+          <p>Somos Weblink's Website of Wonders, una compañía dedicada a la creación de contenido de rol y aventuras para el juego de mesa Dungeons & Dragons.</p>
+          <p>Nuestra misión es hacer que tus partidas de D&D sean inolvidables, llenas de emoción y sorpresas.</p>
+          <p>¡Contáctanos para explorar nuevos mundos y vivir grandes aventuras!</p>
+      </section>
+  
+      <!-- Envíanos un mail! -->
+      <section>
+          <h2>¡Envíanos un correo!</h2>
+          <form action="mailto:tucorreo@example.com" method="post" enctype="text/plain">
+              <label for="nombre">Nombre:</label>
+              <input type="text" id="nombre" name="nombre" required><br><br>
+  
+              <label for="email">Correo Electrónico:</label>
+              <input type="email" id="email" name="email" required><br><br>
+  
+              <label for="mensaje">Mensaje:</label><br>
+              <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br><br>
+  
+              <input type="submit" value="Enviar">
+          </form>
+      </section>
 
         <div class="img-background"></div>
         

@@ -403,3 +403,17 @@ footer {
   padding: 10px auto;
 }
 /* ---- MAPAS Y VIDEOS ----- */
+
+.image-container img {
+  display: none;
+  max-width: 100%;
+}
+
+/* CSS for handling image visibility when a button is clicked */
+.nav-button:active + .image-container img {
+  display: none;
+}
+
+.nav-button:active + .image-container img:first-child {
+  display: block;
+}
