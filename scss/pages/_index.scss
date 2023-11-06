@@ -1,0 +1,71 @@
+.carousel-banner{
+    padding: 10px 0px;
+  }
+
+
+  /* ---- PATREON ----- */
+.patreon-section {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  .patreon-tier {
+    border: 3px solid #000;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #c9c9c9;
+    margin: 10px auto;
+    max-width: 470px;
+  
+  }
+  
+  .patreon-tier h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    padding-bottom: 15px;
+  }
+  
+  .patreon-tier a {
+    display: block;
+    background-color: #912633;
+    color: #fff;
+    
+    width: max-content;
+    margin: 0 auto;
+    padding: 10px 20px;
+  
+    border: 2px solid #410202;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+  
+  }
+  
+  .patreon-tier ul {
+    text-align: left;
+    padding-left: 20px;
+  }
+  /* ---- PATREON ----- */
+
+  /* ---- MENSAJES DE CLIENTES - INDEX ----- */
+
+.client-message {
+  padding: 10px;
+  border: 1px solid #000000;
+  background-color: #dddddd;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.client-message h3 {
+  font-size: 1.5em;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #575757;
+  padding: 10px;
+}
+
+.client-message p {
+  padding: 10px;
+}
+/* ---- MENSAJES DE CLIENTES - INDEX ----- */

@@ -1,11 +1,9 @@
-function showImage(imageNumber) {
-    // Hide all images
+function showImage(imageId) {
     const images = document.querySelectorAll('.image-container img');
-    images.forEach(image => image.style.display = 'none');
+    images.forEach((img) => {
+        img.style.display = 'none';
+    });
 
-    // Show the selected image
-    const selectedImage = document.querySelector(`.image-container img:nth-child(${imageNumber})`);
-    if (selectedImage) {
-        selectedImage.style.display = 'block';
-    }
+    const targetImage = document.getElementById(imageId);
+    targetImage.style.display = 'block';
 }

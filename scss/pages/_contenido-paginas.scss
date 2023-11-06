@@ -1,0 +1,15 @@
+.coming-soon {
+    display: inline-block;
+    background-color: #ff6f61;
+    color: #ffffff;
+    font-size: 24px; /* Increase the font size */
+    padding: 10px 20px; /* Adjust padding for centered text */
+    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-left: 5px;
+}
+
+.image-container img {
+    display: none;
+}

@@ -1,0 +1,18 @@
+/* ---- Imagenes en Body e Imagen Parallax ----- */
+.body-img{
+    max-width: 50vw;
+    min-width: 30vh;
+    padding: 20px auto;
+    }
+    
+    .img-background {
+        background-image: url(../img/fondo.jpg);
+    
+        height: 300px;
+    
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;  
+    }
+    /* ---- Imagenes en Body e Imagen Parallax ----- */

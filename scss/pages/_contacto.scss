@@ -1,0 +1,12 @@
+.google-map{
+    width: 100%; /* Make the iframe take the full width of its container */
+    max-width: 100%; /* Ensure it doesn't exceed the container's width */
+    height: 300px; /* Set an initial height that fits your design (adjust as needed) */
+    padding: 20px;
+}
+
+.contacto-division{
+    border-top: 1px solid #000; /* Adjust the color and width as desired */
+    width: 80%; /* Set the desired width for the divider */
+    margin: 0 auto; /* Center the divider horizontally */
+}

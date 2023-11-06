@@ -1,0 +1,44 @@
+/* ---- BLOG ----- */
+.blog-section {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  .blog-article {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    text-align: left;
+    padding-bottom: 20px;
+    overflow: hidden;
+    
+    max-width: 600px;
+    margin: 10px auto;
+  }
+  
+  .blog-article img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    object-fit: fill;
+  
+  }
+  
+  .blog-article h2 {
+    font-size: 20px;
+    margin: 10px;
+  }
+  
+  .blog-article p {
+    font-size: 16px;
+    margin: 10px;
+  }
+  
+  .blog-article a {
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 10px;
+  }
+  /* ---- BLOG ----- */

@@ -1,0 +1,52 @@
+/* ---- FOOTER ----- */
+/* ---- Tuve problemas con el formato y estilo del footer. No se si era por Bootstrap o algun error mio, pero tuve que buscar ayuda y
+usar ChatGPT para encontrar una solucion. Si no uso el nivel de especificidad que use aca algunas partes del estilo como margin entre <li>
+no se aplica o los iconos de Bootstrap desaparecen ----- */
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.75rem;
+}
+
+.footer-nav {
+  width: 50%;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.right {
+  text-align: right;
+  padding-right: 10px;
+}
+
+.footer-nav ul:first-child {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-nav ul:last-child {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-nav ul:last-child li {
+  margin-bottom: 10px;
+}
+
+.footer-nav ul a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footernav ul a .bi {
+  color: #fff;
+  font-size: 0.75rem;
+}
+/* ---- FOOTER ----- */
+  /* ---- FOOTER ----- */

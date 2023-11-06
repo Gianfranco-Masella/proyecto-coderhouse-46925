@@ -1,0 +1,18 @@
+   .contenido-boton {
+        display: inline-block;
+        text-align: center;
+        padding: 10px 20px;
+        margin: 10px;
+        background-color: #912633;
+        color: #ffffff;
+        text-decoration: none;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        border: 2px solid #410202;
+        border-radius: 5px;
+    }
+
+    .contenido-boton:hover {
+        background-color: #410202;
+    }

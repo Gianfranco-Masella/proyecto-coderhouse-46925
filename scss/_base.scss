@@ -1,0 +1,48 @@
+/* ---- CSS Reset ----- */
+* {
+	margin: 0;
+	padding: 0;
+  box-sizing: border-box;
+  font-family: Rosarivo;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  text-decoration-color: none;
+}
+/* ---- CSS Reset ----- */
+
+/* ---- Titulos secundarios en toda la pagina ----- */
+.big-text{
+  background-color: white;
+  padding: 20px;
+
+
+  text-align: center;
+  color: black;
+  font-size: 2rem;
+  font-weight: bold italic;
+}
+
+
+.title-secondary{
+  background-color: white;
+  padding: 20px;
+  
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.contact-list {
+  list-style-type: decimal; /* Remove default list numbering */
+  margin-right: 5px; /* Add space between the number and the content */
+}
+
+.contact-list li{
+  padding: 5px;
+  text-align: left;
+}
