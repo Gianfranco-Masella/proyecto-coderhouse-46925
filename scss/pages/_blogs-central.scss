@@ -6,13 +6,15 @@
   }
   
   .blog-article {
-    border: 1px solid #ccc;
+    border: 1px solid #000000;
     border-radius: 10px;
-    background-color: #fff;
+    background-color: #e6e6e6;
     text-align: left;
     padding-bottom: 20px;
     overflow: hidden;
     
+    min-height: 550px;
+    max-height: 650px;
     max-width: 600px;
     margin: 10px auto;
   }

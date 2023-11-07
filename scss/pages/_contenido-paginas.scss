@@ -1,8 +1,8 @@
 .coming-soon {
     background-color: #912633;
     color: #ffffff;
-    font-size: 24px; /* Increase the font size */
-    padding: 20px 30px; /* Adjust padding for centered text */
+    font-size: 24px;
+    padding: 20px 30px;
     border-radius: 5px;
     letter-spacing: 2px;
     margin: 25px;
@@ -16,7 +16,7 @@
 
 .image-container img {
     display: none;
-    max-width: 100%; /* Maintain image resolution while ensuring they fit the container */
-    margin: 20px auto; /* Center the images horizontally */
-    padding: 20px auto; /* Add padding around the images */
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 20px auto;
 }
