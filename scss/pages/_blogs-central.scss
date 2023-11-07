@@ -42,3 +42,32 @@
     margin: 10px;
   }
   /* ---- BLOG ----- */
+
+  /* ---- BLOG - MEDIUM ----- */
+@media (min-width: 768px) {
+  .blog-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin: 10px;
+  }
+
+  .blog-article {
+    grid-row: 2;
+    grid-column: auto;
+    max-width: 400px;
+  }
+
+  .blog-section h1 {
+    grid-row: 1;
+    grid-column: 1 / span 3;
+  }
+
+  .blog-article img {
+    height: 50%;
+    display: block;
+    object-fit: cover;
+    margin: 0 auto;
+  }
+}
+/* ---- BLOG - MEDIUM ----- */

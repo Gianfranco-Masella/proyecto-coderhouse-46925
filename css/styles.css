@@ -73,6 +73,19 @@ a {
   width: 7.5rem;
 }
 
+/* ---- Header - Medium ----- */
+@media (min-width: 768px) {
+  .nav-header {
+    padding: 10px 50px;
+  }
+  .logo {
+    width: 10rem;
+  }
+  .navbar-nav {
+    margin-left: auto;
+  }
+}
+/* ---- Header - Medium ----- */
 /* ---- Imagenes en Body e Imagen Parallax ----- */
 .body-img {
   max-width: 50vw;
@@ -142,12 +155,30 @@ footer {
 }
 
 /* ---- FOOTER ----- */
-/* ---- FOOTER ----- */
+/* ---- FOOTER - MEDIUM----- */
+@media (min-width: 768px) {
+  footer {
+    font-size: 1rem;
+  }
+  .right {
+    text-align: left;
+    border-left: 2px solid white;
+  }
+  .footernav ul a .bi {
+    font-size: 1rem;
+  }
+}
+/* ---- FOOTER - MEDIUM----- */
 .generic-text {
   padding: 10px;
   text-align: center;
 }
 
+@media (min-width: 768px) {
+  .generic-text, .title-secondary, .big-text {
+    text-align: left;
+  }
+}
 .imagenes-general {
   max-width: 100%; /* Make the image responsive to the parent container */
   height: auto;
@@ -201,6 +232,28 @@ footer {
 }
 
 /* ---- PATREON ----- */
+/* ---- PATREON - MEDIUM ----- */
+@media (min-width: 768px) {
+  .patreon-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin: 10px;
+  }
+  .patreon-section h2 {
+    grid-row: 1;
+    grid-column: 1/span 3;
+  }
+  .patreon-tier {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    grid-row: 2;
+    grid-column: auto;
+  }
+}
+/* ---- PATREON - MEDIUM ----- */
 /* ---- MENSAJES DE CLIENTES - INDEX ----- */
 .client-message {
   padding: 10px;
@@ -222,6 +275,20 @@ footer {
 }
 
 /* ---- MENSAJES DE CLIENTES - INDEX ----- */
+@media (min-width: 768px) {
+  /* ---- Estos bloques hacen que los comentarios de los clientes queden "alternados" uno de cada lado ----- */
+  .client-message:nth-child(even) {
+    flex-direction: row;
+    width: 75%;
+    margin-right: 20px;
+  }
+  .client-message:nth-child(odd) {
+    flex-direction: row;
+    width: 75%;
+    margin-left: auto;
+    text-align: right;
+  }
+}
 /* ---- BLOG ----- */
 .blog-section {
   display: flex;
@@ -265,6 +332,31 @@ footer {
 }
 
 /* ---- BLOG ----- */
+/* ---- BLOG - MEDIUM ----- */
+@media (min-width: 768px) {
+  .blog-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin: 10px;
+  }
+  .blog-article {
+    grid-row: 2;
+    grid-column: auto;
+    max-width: 400px;
+  }
+  .blog-section h1 {
+    grid-row: 1;
+    grid-column: 1/span 3;
+  }
+  .blog-article img {
+    height: 50%;
+    display: block;
+    object-fit: cover;
+    margin: 0 auto;
+  }
+}
+/* ---- BLOG - MEDIUM ----- */
 .google-map {
   width: 100%; /* Make the iframe take the full width of its container */
   max-width: 100%; /* Ensure it doesn't exceed the container's width */

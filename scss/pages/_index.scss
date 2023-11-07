@@ -48,6 +48,32 @@
   }
   /* ---- PATREON ----- */
 
+
+  /* ---- PATREON - MEDIUM ----- */
+@media (min-width: 768px) {
+  .patreon-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin: 10px;
+  }
+
+  .patreon-section h2 {
+    grid-row: 1;
+    grid-column: 1 / span 3;
+  }
+
+  .patreon-tier {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    grid-row: 2;
+    grid-column: auto;
+  }
+}
+/* ---- PATREON - MEDIUM ----- */
+
   /* ---- MENSAJES DE CLIENTES - INDEX ----- */
 
 .client-message {
@@ -69,3 +95,20 @@
   padding: 10px;
 }
 /* ---- MENSAJES DE CLIENTES - INDEX ----- */
+
+@media (min-width: 768px) {
+
+  /* ---- Estos bloques hacen que los comentarios de los clientes queden "alternados" uno de cada lado ----- */
+  .client-message:nth-child(even) {
+    flex-direction: row;
+    width: 75%;
+    margin-right: 20px;
+  }
+
+  .client-message:nth-child(odd) {
+    flex-direction: row;
+    width: 75%;
+    margin-left: auto;
+    text-align: right;
+  }
+}

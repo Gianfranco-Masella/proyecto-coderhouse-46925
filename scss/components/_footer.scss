@@ -49,4 +49,22 @@ footer {
   font-size: 0.75rem;
 }
 /* ---- FOOTER ----- */
-  /* ---- FOOTER ----- */
+
+/* ---- FOOTER - MEDIUM----- */
+@media (min-width: 768px) {
+
+  footer {
+    font-size: 1rem;
+  }
+  
+  .right {
+    text-align: left;
+    border-left: 2px solid white;
+  }
+  
+  .footernav ul a .bi {
+    font-size: 1rem;
+  }
+
+}
+/* ---- FOOTER - MEDIUM----- */

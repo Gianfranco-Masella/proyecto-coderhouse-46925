@@ -2,3 +2,9 @@
     padding: 10px;
     text-align: center;
   }
+
+  @media (min-width: 768px) {
+    .generic-text, .title-secondary, .big-text {
+        text-align: left;
+    }
+  }

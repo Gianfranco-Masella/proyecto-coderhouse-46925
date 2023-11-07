@@ -28,4 +28,20 @@
     animation: rocking 3s ease-in-out infinite;
     width: 7.5rem;
   }
+
+  /* ---- Header - Medium ----- */
+@media (min-width: 768px) {
+  .nav-header {
+      padding: 10px 50px;
+  }
+
+  .logo {
+      width: 10rem;
+  }
+
+  .navbar-nav {
+      margin-left: auto;
+  }
+}
+/* ---- Header - Medium ----- */
   
