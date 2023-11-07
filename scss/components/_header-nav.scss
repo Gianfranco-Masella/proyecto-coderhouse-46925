@@ -12,6 +12,20 @@
     color: #fff;
   }
   
+  @keyframes rocking {
+    0% {
+        transform: rotate(2deg) scale(105%);
+    }
+    50% {
+        transform: rotate(-2deg) scale(95%);
+    }
+    100% {
+        transform: rotate(2deg) scale(105%);
+    }
+}
+  
   .logo{
+    animation: rocking 3s ease-in-out infinite;
     width: 7.5rem;
   }
+  

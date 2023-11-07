@@ -90,19 +90,15 @@
       <section class="blog-section">
         <article>
     
-          <form action="">
-            <div class="form-group">
-              <label for="preguntas-nombre">Usuario</label>
-              <input type="text" class="form-control" id="preguntas-nombre" placeholder="Nombre" name="preguntas-nombre">
-            </div>
-    
-            <div class="form-group">
-              <label for="preguntas-texto">Pregunta</label>
-              <textarea class="form-control" id="preguntas-texto" placeholder="Pregunta" name="preguntas-texto"></textarea>
-            </div>
-    
-            <button type="submit" class="btn btn-primary">ENVIAR</button>
-          </form>
+          <form class="contacto-form" id="contact-form">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+      
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+      
+            <input type="submit" value="Enviar" id="submit-button">
+        </form>
     
         </article>
       </section>

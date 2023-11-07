@@ -1,15 +1,22 @@
 .coming-soon {
-    display: inline-block;
-    background-color: #ff6f61;
+    background-color: #912633;
     color: #ffffff;
     font-size: 24px; /* Increase the font size */
-    padding: 10px 20px; /* Adjust padding for centered text */
+    padding: 20px 30px; /* Adjust padding for centered text */
     border-radius: 5px;
-    text-transform: uppercase;
     letter-spacing: 2px;
-    margin-left: 5px;
+    margin: 25px;
+    text-align: center;
+}
+
+.button-container {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .image-container img {
     display: none;
+    max-width: 100%; /* Maintain image resolution while ensuring they fit the container */
+    margin: 20px auto; /* Center the images horizontally */
+    padding: 20px auto; /* Add padding around the images */
 }

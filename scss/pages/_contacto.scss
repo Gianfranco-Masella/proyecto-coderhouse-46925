@@ -10,3 +10,46 @@
     width: 80%; /* Set the desired width for the divider */
     margin: 0 auto; /* Center the divider horizontally */
 }
+
+.contacto-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .contacto-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .contacto-form input[type="text"],
+  .contacto-form input[type="email"],
+  .contacto-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .contacto-form textarea {
+    resize: vertical;
+  }
+  
+  .contacto-form input[type="submit"] {
+    background-color: #912633;
+    color: #fff;
+    padding: 10px 20px;
+    border: 2px solid #410202;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .contacto-form input[type="submit"]:hover {
+    background-color: #410202;
+  }
