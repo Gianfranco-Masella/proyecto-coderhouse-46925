@@ -180,13 +180,18 @@ footer {
   }
 }
 .imagenes-general {
-  max-width: 40vw;
+  max-width: 70vw;
   height: auto;
   display: block;
   margin: 0 auto;
   padding: 10px;
 }
 
+@media (min-width: 768px) {
+  .imagenes-general {
+    max-width: 40vw;
+  }
+}
 .carousel-banner {
   padding: 10px 0px;
 }
@@ -304,7 +309,7 @@ footer {
   padding-bottom: 20px;
   overflow: hidden;
   min-height: 550px;
-  max-height: 650px;
+  max-height: 850px;
   max-width: 600px;
   margin: 10px auto;
 }

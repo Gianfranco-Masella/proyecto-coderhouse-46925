@@ -1,5 +1,5 @@
 .imagenes-general{
-    max-width: 40vw;
+    max-width: 70vw;
     height: auto;
     display: block;
     margin: 0 auto;
@@ -7,3 +7,8 @@
 
 }
 
+@media (min-width: 768px) {
+    .imagenes-general {
+        max-width: 40vw;
+    }
+  }
