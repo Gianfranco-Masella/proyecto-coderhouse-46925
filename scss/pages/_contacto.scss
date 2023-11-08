@@ -50,10 +50,8 @@
   }
   
   .contacto-form input[type="submit"] {
-    background-color: #912633;
-    color: #fff;
+    @include button-colors;
     padding: 10px 20px;
-    border: 2px solid #410202;
     border-radius: 5px;
     cursor: pointer;
     font-weight: bold;

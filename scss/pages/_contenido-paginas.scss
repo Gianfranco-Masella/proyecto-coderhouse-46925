@@ -1,6 +1,5 @@
 .coming-soon {
-    background-color: #912633;
-    color: #ffffff;
+    @include button-colors;
     font-size: 24px;
     padding: 20px 30px;
     border-radius: 5px;

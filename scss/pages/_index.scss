@@ -27,15 +27,14 @@
   }
   
   .patreon-tier a {
+    @include button-colors;
+
     display: block;
-    background-color: #912633;
-    color: #fff;
     
     width: max-content;
     margin: 0 auto;
     padding: 10px 20px;
   
-    border: 2px solid #410202;
     border-radius: 5px;
     text-decoration: none;
     text-align: center;

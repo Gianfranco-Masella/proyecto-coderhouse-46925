@@ -46,3 +46,9 @@ a {
   padding: 5px;
   text-align: left;
 }
+
+@mixin button-colors{
+  background-color: #912633;
+  border: 2px solid #410202;
+  color: #ffffff;
+}

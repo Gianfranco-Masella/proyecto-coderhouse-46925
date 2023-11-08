@@ -219,13 +219,13 @@ footer {
 }
 
 .patreon-tier a {
-  display: block;
   background-color: #912633;
-  color: #fff;
+  border: 2px solid #410202;
+  color: #ffffff;
+  display: block;
   width: max-content;
   margin: 0 auto;
   padding: 10px 20px;
-  border: 2px solid #410202;
   border-radius: 5px;
   text-decoration: none;
   text-align: center;
@@ -416,9 +416,9 @@ footer {
 
 .contacto-form input[type=submit] {
   background-color: #912633;
-  color: #fff;
-  padding: 10px 20px;
   border: 2px solid #410202;
+  color: #ffffff;
+  padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
   font-weight: bold;
@@ -435,18 +435,16 @@ footer {
   }
 }
 .contenido-boton {
+  background-color: #912633;
+  border: 2px solid #410202;
+  color: #ffffff;
   display: block;
   text-align: center;
   padding: 10px 20px;
   margin: 10px auto;
-  background-color: #912633;
-  color: #ffffff;
   text-decoration: none;
-  border: none;
   border-radius: 5px;
   cursor: pointer;
-  border: 2px solid #410202;
-  border-radius: 5px;
 }
 
 .contenido-boton:hover {
@@ -455,6 +453,7 @@ footer {
 
 .coming-soon {
   background-color: #912633;
+  border: 2px solid #410202;
   color: #ffffff;
   font-size: 24px;
   padding: 20px 30px;
