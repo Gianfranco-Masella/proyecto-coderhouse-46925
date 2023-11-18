@@ -1,12 +1,13 @@
 /* ---- CSS Reset ----- */
 * {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
   font-family: Rosarivo;
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
 }
 
@@ -14,10 +15,11 @@ a {
   text-decoration: none;
   text-decoration-color: none;
 }
+
 /* ---- CSS Reset ----- */
 
 /* ---- Titulos secundarios en toda la pagina ----- */
-.big-text{
+.big-text {
   background-color: white;
   padding: 20px;
 
@@ -29,25 +31,25 @@ a {
 }
 
 
-.title-secondary{
+.title-secondary {
   background-color: white;
   padding: 20px;
-  
+
   font-size: 1.5rem;
   text-align: center;
 }
 
 .contact-list {
-  list-style-type: decimal; /* Remove default list numbering */
-  margin-right: 5px; /* Add space between the number and the content */
+  list-style-type: decimal;
+  margin-right: 5px;
 }
 
-.contact-list li{
+.contact-list li {
   padding: 5px;
   text-align: left;
 }
 
-@mixin button-colors{
+@mixin button-colors {
   background-color: #912633;
   border: 2px solid #410202;
   color: #ffffff;

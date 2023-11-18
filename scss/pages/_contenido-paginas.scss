@@ -4,7 +4,7 @@
     padding: 20px 30px;
     border-radius: 5px;
     letter-spacing: 2px;
-    margin: 25px;
+    margin: 10px;
     text-align: center;
 }
 
@@ -20,6 +20,7 @@
     padding: 20px auto;
 }
 
+
 @media (min-width: 768px) {
     .image-container img {
         display: none;
@@ -27,4 +28,4 @@
         margin: 20px auto;
         padding: 20px auto;
     }
-  }
+}

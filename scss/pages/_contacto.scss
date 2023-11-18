@@ -1,8 +1,8 @@
-.google-map{
-    width: 100%;
-    max-width: 100%;
-    height: 300px;
-    padding: 20px;
+.google-map {
+  width: 100%;
+  max-width: 100%;
+  height: 300px;
+  padding: 20px;
 }
 
 @media (min-width: 768px) {
@@ -14,56 +14,58 @@
   }
 }
 
-.contacto-division{
-    border-top: 1px solid #000;
-    width: 80%;
-    margin: 0 auto;
+.contacto-division {
+  border-top: 1px solid #000;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .contacto-form {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #f4f4f4;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  .contacto-form label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-  }
-  
-  .contacto-form input[type="text"],
-  .contacto-form input[type="email"],
-  .contacto-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  .contacto-form textarea {
-    resize: vertical;
-  }
-  
-  .contacto-form input[type="submit"] {
-    @include button-colors;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-  }
-  
-  .contacto-form input[type="submit"]:hover {
-    background-color: #410202;
-  }
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
 
-  @media (min-width: 768px) {
-    .contacto-form {
-      margin: 0;
-      border: none;
-    }
+.contacto-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.contacto-form input[type="text"],
+.contacto-form input[type="email"],
+.contacto-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contacto-form textarea {
+  resize: vertical;
+}
+
+.contacto-form input[type="submit"] {
+  @include button-colors;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+
+  transition: background-color 0.5s;
+}
+
+.contacto-form input[type="submit"]:hover {
+  background-color: #410202;
+}
+
+@media (min-width: 768px) {
+  .contacto-form {
+    margin: 0;
+    border: none;
   }
+}

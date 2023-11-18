@@ -1,10 +1,16 @@
-.generic-text{
-    padding: 10px;
-    text-align: center;
+.generic-text {
+  padding: 10px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+
+  .title-secondary,
+  .big-text {
+    text-align: left;
   }
 
-  @media (min-width: 768px) {
-    .generic-text, .title-secondary, .big-text {
-        text-align: left;
-    }
+  .generic-text {
+    text-align: justify;
   }
+}

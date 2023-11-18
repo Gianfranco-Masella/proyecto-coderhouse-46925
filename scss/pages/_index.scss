@@ -1,54 +1,61 @@
-.carousel-banner{
-    padding: 10px 0px;
-  }
+.carousel-banner {
+  padding: 10px 0px;
+}
 
 
-  /* ---- PATREON ----- */
+/* ---- PATREON ----- */
 .patreon-section {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-  }
-  
-  .patreon-tier {
-    border: 3px solid #000;
-    border-radius: 10px;
-    padding: 20px;
-    background-color: #c9c9c9;
-    margin: 10px auto;
-    max-width: 470px;
-  
-  }
-  
-  .patreon-tier h2 {
-    text-align: center;
-    font-size: 2.5rem;
-    padding-bottom: 15px;
-  }
-  
-  .patreon-tier a {
-    @include button-colors;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
 
-    display: block;
-    
-    width: max-content;
-    margin: 0 auto;
-    padding: 10px 20px;
-  
-    border-radius: 5px;
-    text-decoration: none;
-    text-align: center;
-  
-  }
-  
-  .patreon-tier ul {
-    text-align: left;
-    padding-left: 20px;
-  }
-  /* ---- PATREON ----- */
+.patreon-tier {
+  border: 3px solid #000;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #c9c9c9;
+  margin: 10px auto;
+  max-width: 470px;
+
+}
+
+.patreon-tier h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  padding-bottom: 15px;
+}
+
+.patreon-tier a {
+  @include button-colors;
+
+  display: block;
+
+  width: max-content;
+  margin: 0 auto;
+  padding: 10px 20px;
+
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+
+  transition: background-color 0.5s;
+}
 
 
-  /* ---- PATREON - MEDIUM ----- */
+.patreon-tier a:hover {
+  background-color: #410202;
+}
+
+.patreon-tier ul {
+  text-align: left;
+  padding-left: 20px;
+}
+
+/* ---- PATREON ----- */
+
+
+/* ---- PATREON - MEDIUM ----- */
 @media (min-width: 768px) {
   .patreon-section {
     display: grid;
@@ -71,9 +78,10 @@
     grid-column: auto;
   }
 }
+
 /* ---- PATREON - MEDIUM ----- */
 
-  /* ---- MENSAJES DE CLIENTES - INDEX ----- */
+/* ---- MENSAJES DE CLIENTES - INDEX ----- */
 
 .client-message {
   padding: 10px;
@@ -93,6 +101,7 @@
 .client-message p {
   padding: 10px;
 }
+
 /* ---- MENSAJES DE CLIENTES - INDEX ----- */
 
 @media (min-width: 768px) {

@@ -6,7 +6,8 @@
   font-family: Rosarivo;
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
 }
 
@@ -34,8 +35,8 @@ a {
 }
 
 .contact-list {
-  list-style-type: decimal; /* Remove default list numbering */
-  margin-right: 5px; /* Add space between the number and the content */
+  list-style-type: decimal;
+  margin-right: 5px;
 }
 
 .contact-list li {
@@ -43,8 +44,17 @@ a {
   text-align: left;
 }
 
+.header-placeholder {
+  height: 20vh;
+}
+
 .nav-header {
   background-color: #912633;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.3);
 }
 
 .nav-header .navbar-nav .nav-item.dropdown .dropdown-menu {
@@ -94,7 +104,7 @@ a {
 }
 
 .img-background {
-  background-image: url(../img/fondo.jpg);
+  background-image: url(../img/fondo.webp);
   height: 300px;
   background-attachment: fixed;
   background-position: center;
@@ -175,8 +185,12 @@ footer {
 }
 
 @media (min-width: 768px) {
-  .generic-text, .title-secondary, .big-text {
+  .title-secondary,
+  .big-text {
     text-align: left;
+  }
+  .generic-text {
+    text-align: justify;
   }
 }
 .imagenes-general {
@@ -229,6 +243,11 @@ footer {
   border-radius: 5px;
   text-decoration: none;
   text-align: center;
+  transition: background-color 0.5s;
+}
+
+.patreon-tier a:hover {
+  background-color: #410202;
 }
 
 .patreon-tier ul {
@@ -304,12 +323,12 @@ footer {
 .blog-article {
   border: 1px solid #000000;
   border-radius: 10px;
-  background-color: #e6e6e6;
+  background-color: #dbdbdb;
   text-align: left;
   padding-bottom: 20px;
   overflow: hidden;
-  min-height: 550px;
-  max-height: 850px;
+  min-height: 350px;
+  max-height: 750px;
   max-width: 600px;
   margin: 10px auto;
 }
@@ -351,6 +370,7 @@ footer {
     grid-row: 2;
     grid-column: auto;
     max-width: 400px;
+    max-height: 650px;
   }
   .blog-section h1 {
     grid-row: 1;
@@ -422,6 +442,7 @@ footer {
   border-radius: 5px;
   cursor: pointer;
   font-weight: bold;
+  transition: background-color 0.5s;
 }
 
 .contacto-form input[type=submit]:hover {
@@ -442,8 +463,8 @@ footer {
   text-align: center;
   padding: 10px 20px;
   margin: 10px auto;
-  text-decoration: none;
   border-radius: 5px;
+  transition: background-color 0.5s;
   cursor: pointer;
 }
 
@@ -459,7 +480,7 @@ footer {
   padding: 20px 30px;
   border-radius: 5px;
   letter-spacing: 2px;
-  margin: 25px;
+  margin: 10px;
   text-align: center;
 }
 
