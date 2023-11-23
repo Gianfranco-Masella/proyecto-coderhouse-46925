@@ -44,6 +44,21 @@ a {
   text-align: left;
 }
 
+.iframe-style {
+  width: 100%;
+  max-width: 100%;
+  height: 300px;
+  padding: 20px;
+}
+
+@media (min-width: 768px) {
+  .iframe-style {
+    display: block;
+    margin: 0 auto;
+    height: 60vh;
+    width: 50vw;
+  }
+}
 .header-placeholder {
   height: 20vh;
 }
@@ -61,10 +76,9 @@ a {
   background-color: #912633;
 }
 
-/* ---- Aca me paso lo mismo que con el fondo. Si no usaba clases tan especificas el estilo de Boostrap cobraba importancia sobre el mio ----- */
 .nav-header .navbar-nav .nav-link,
 .nav-header .navbar-nav .nav-item.dropdown .dropdown-menu .dropdown-item {
-  color: #fff;
+  color: white;
 }
 
 @keyframes rocking {
@@ -114,12 +128,9 @@ a {
 
 /* ---- Imagenes en Body e Imagen Parallax ----- */
 /* ---- FOOTER ----- */
-/* ---- Tuve problemas con el formato y estilo del footer. No se si era por Bootstrap o algun error mio, pero tuve que buscar ayuda y
-usar ChatGPT para encontrar una solucion. Si no uso el nivel de especificidad que use aca algunas partes del estilo como margin entre <li>
-no se aplica o los iconos de Bootstrap desaparecen ----- */
 footer {
-  background-color: #000;
-  color: #fff;
+  background-color: black;
+  color: white;
   padding: 20px;
   display: flex;
   justify-content: space-between;
@@ -155,12 +166,12 @@ footer {
 }
 
 .footer-nav ul a {
-  color: #fff;
+  color: white;
   text-decoration: none;
 }
 
 .footernav ul a .bi {
-  color: #fff;
+  color: white;
   font-size: 0.75rem;
 }
 
@@ -235,7 +246,7 @@ footer {
 .patreon-tier a {
   background-color: #912633;
   border: 2px solid #410202;
-  color: #ffffff;
+  color: white;
   display: block;
   width: max-content;
   margin: 0 auto;
@@ -437,7 +448,7 @@ footer {
 .contacto-form input[type=submit] {
   background-color: #912633;
   border: 2px solid #410202;
-  color: #ffffff;
+  color: white;
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
@@ -458,7 +469,7 @@ footer {
 .contenido-boton {
   background-color: #912633;
   border: 2px solid #410202;
-  color: #ffffff;
+  color: white;
   display: block;
   text-align: center;
   padding: 10px 20px;
@@ -475,7 +486,7 @@ footer {
 .coming-soon {
   background-color: #912633;
   border: 2px solid #410202;
-  color: #ffffff;
+  color: white;
   font-size: 24px;
   padding: 20px 30px;
   border-radius: 5px;

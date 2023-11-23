@@ -1,10 +1,10 @@
+$footer-back-color: black;
+$footer-font-color: white;
+
 /* ---- FOOTER ----- */
-/* ---- Tuve problemas con el formato y estilo del footer. No se si era por Bootstrap o algun error mio, pero tuve que buscar ayuda y
-usar ChatGPT para encontrar una solucion. Si no uso el nivel de especificidad que use aca algunas partes del estilo como margin entre <li>
-no se aplica o los iconos de Bootstrap desaparecen ----- */
 footer {
-  background-color: #000;
-  color: #fff;
+  background-color: $footer-back-color;
+  color: $footer-font-color;
   padding: 20px;
   display: flex;
   justify-content: space-between;
@@ -40,12 +40,12 @@ footer {
 }
 
 .footer-nav ul a {
-  color: #fff;
+  color: $footer-font-color;
   text-decoration: none;
 }
 
 .footernav ul a .bi {
-  color: #fff;
+  color: $footer-font-color;
   font-size: 0.75rem;
 }
 
@@ -60,7 +60,7 @@ footer {
 
   .right {
     text-align: left;
-    border-left: 2px solid white;
+    border-left: 2px solid $footer-font-color;
   }
 
   .footernav ul a .bi {

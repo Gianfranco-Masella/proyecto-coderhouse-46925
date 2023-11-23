@@ -1,9 +1,12 @@
+$header-back-color: #912633;
+$header-font-color: white;
+
 .header-placeholder {
   height: 20vh;
 }
 
 .nav-header {
-  background-color: #912633;
+  background-color: $header-back-color;
   position: fixed;
   top: 0;
   width: 100%;
@@ -13,13 +16,12 @@
 }
 
 .nav-header .navbar-nav .nav-item.dropdown .dropdown-menu {
-  background-color: #912633;
+  background-color: $header-back-color;
 }
 
-/* ---- Aca me paso lo mismo que con el fondo. Si no usaba clases tan especificas el estilo de Boostrap cobraba importancia sobre el mio ----- */
 .nav-header .navbar-nav .nav-link,
 .nav-header .navbar-nav .nav-item.dropdown .dropdown-menu .dropdown-item {
-  color: #fff;
+  color: $header-font-color;
 }
 
 @keyframes rocking {
