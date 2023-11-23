@@ -1,6 +1,12 @@
 $footer-back-color: black;
 $footer-font-color: white;
 
+@mixin footer-nav-ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 /* ---- FOOTER ----- */
 footer {
   background-color: $footer-back-color;
@@ -24,15 +30,11 @@ footer {
 }
 
 .footer-nav ul:first-child {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+  @include footer-nav-ul();
 }
 
 .footer-nav ul:last-child {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+  @include footer-nav-ul();
 }
 
 .footer-nav ul:last-child li {
