@@ -395,21 +395,6 @@ footer {
   }
 }
 /* ---- BLOG - MEDIUM ----- */
-.google-map {
-  width: 100%;
-  max-width: 100%;
-  height: 300px;
-  padding: 20px;
-}
-
-@media (min-width: 768px) {
-  .google-map {
-    display: block;
-    margin: 0 auto;
-    height: 60vh;
-    width: 50vw;
-  }
-}
 .contacto-division {
   border-top: 1px solid #000;
   width: 80%;
